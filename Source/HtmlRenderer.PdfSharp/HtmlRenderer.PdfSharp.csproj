@@ -1,8 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net20</TargetFramework>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <Version>1.5.1.0</Version>
+    <Version>1.5.2</Version>
+    <AssemblyTitle>HTML Renderer</AssemblyTitle>
+    <Company>Open source hosted on CodePlex</Company>
+    <Product>HTML Renderer</Product>
+    <Copyright>Copyright ©  2008</Copyright>
+    <PackageVersion>1.5.2-alpha</PackageVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
@@ -12,10 +16,5 @@
     <Reference Include="System.Xml" />
     <ProjectReference Include="..\HtmlRenderer\HtmlRenderer.csproj" />
     <PackageReference Include="PdfSharp" Version="1.51.5185-beta" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\SharedAssemblyInfo.cs">
-      <Link>Properties\SharedAssemblyInfo.cs</Link>
-    </Compile>
   </ItemGroup>
 </Project>

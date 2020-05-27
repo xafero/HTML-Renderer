@@ -2,8 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net20</TargetFramework>
-    <Version>1.5.1.0</Version>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Version>1.5.2-alpha</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
@@ -13,10 +12,5 @@
   <ItemGroup>
     <EmbeddedResource Include="Core\Utils\ImageError.png" />
     <EmbeddedResource Include="Core\Utils\ImageLoad.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\SharedAssemblyInfo.cs">
-      <Link>Properties\SharedAssemblyInfo.cs</Link>
-    </Compile>
   </ItemGroup>
 </Project>

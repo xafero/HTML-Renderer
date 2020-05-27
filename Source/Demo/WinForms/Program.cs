@@ -15,6 +15,7 @@ using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
+using TheArtOfDev.HtmlRenderer.Core;
 
 namespace TheArtOfDev.HtmlRenderer.Demo.WinForms
 {
@@ -30,6 +31,7 @@ namespace TheArtOfDev.HtmlRenderer.Demo.WinForms
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            HtmlContainerInt.ImagesSecurityProtocol = System.Net.SecurityProtocolType.Tls;
             Application.Run(new DemoForm());
 
             // Application.Run(new PerfForm());

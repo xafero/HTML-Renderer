@@ -48,9 +48,9 @@ namespace TheArtOfDev.HtmlRenderer.Core.Handlers
         /// </summary>
         private readonly Dictionary<string, List<DownloadFileAsyncCallback>> _imageDownloadCallbacks = new Dictionary<string, List<DownloadFileAsyncCallback>>();
 
-        public ImageDownloader()
+        public ImageDownloader(SecurityProtocolType securityProtocolType)
         {
-            ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
+            ServicePointManager.SecurityProtocol = securityProtocolType;
         }
 
         /// <summary>

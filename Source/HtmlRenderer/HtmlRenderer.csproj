@@ -8,6 +8,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.DirectoryServices.Protocols" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Core\Utils\ImageError.png" />

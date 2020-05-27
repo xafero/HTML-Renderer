@@ -13,6 +13,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Net;
 using TheArtOfDev.HtmlRenderer.Adapters;
 using TheArtOfDev.HtmlRenderer.Adapters.Entities;
 using TheArtOfDev.HtmlRenderer.Core.Dom;
@@ -79,6 +80,8 @@ namespace TheArtOfDev.HtmlRenderer.Core
     /// </remarks>
     public sealed class HtmlContainerInt : IDisposable
     {
+        public static SecurityProtocolType ImagesSecurityProtocol { get; set; } = (SecurityProtocolType)3072;
+
         #region Fields and Consts
 
         /// <summary>
@@ -517,7 +520,7 @@ namespace TheArtOfDev.HtmlRenderer.Core
                 if (_root != null)
                 {
                     _selectionHandler = new SelectionHandler(_root);
-                    _imageDownloader = new ImageDownloader();
+                    _imageDownloader = new ImageDownloader(ImagesSecurityProtocol);
                 }
             }
         }

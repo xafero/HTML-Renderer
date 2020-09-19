@@ -1,14 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net20</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Version>1.5.2-alpha</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.DirectoryServices.Protocols" />
-  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Core\Utils\ImageError.png" />
     <EmbeddedResource Include="Core\Utils\ImageLoad.png" />
